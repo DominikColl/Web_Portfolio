@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../styles.css'
 class Landing extends Component {
     state = {}
     render() {

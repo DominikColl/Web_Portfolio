@@ -1,0 +1,28 @@
+#navList{
+    color:orange
+}
+
+#navList{
+    border:1px solid red;
+    display: flex;
+    padding: 15px 0;
+    justify-content: flex-end;
+    
+}
+#nav1,#nav2{
+    margin-right: 15px;
+}
+#projectList,#blogList{
+    display: flex;
+}
+#projectList li,#blogList li{
+    border:2px solid red;
+    height: 100px;
+    width:180px;
+}
+
+.App{
+    /* wrapper */
+    margin-left: 10%;
+    width: 80%;
+}
