@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 class Nav extends Component {
     state = {}
     render() {
-        return (<div><ul><li>Home</li><li>About</li><li>Contact</li></ul></div>);
+        return (<div><ul><li><Link to='/'>Home</Link></li><li><Link to='/about'>About</Link></li><li><Link to='/contact'>Contact</Link></li></ul></div>);
     }
 }
 
