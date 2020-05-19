@@ -3,7 +3,16 @@ import '../styles.css'
 class Landing extends Component {
     state = {}
     render() {
-        return (<h1>Contact page</h1>);
+        return (
+            <>
+                <h1>Form</h1>
+                <form>
+                    <input type='text' placeholder='Name'></input>
+                    <input type='text' placeholder='Email'></input>
+                    <textarea type='text' placeholder=''></textarea>
+                </form>
+            </>
+        );
     }
 }
 

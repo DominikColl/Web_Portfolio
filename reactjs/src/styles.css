@@ -1,3 +1,4 @@
+/* css reset not mine */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -41,10 +42,21 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* my css below */
 #navList{
     color:orange
 }
-
+a,a:visited{
+    color: white;
+   
+}
+#nav{
+    background-color: #1f2124
+}
+body{
+    background-color: #050d14;
+    color:white;
+}
 #navList{
     border:1px solid red;
     display: flex;
@@ -66,20 +78,27 @@ table {
 }
 section ul{
     padding-bottom: 1rem;
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid #00c905;
 }
 #nav1,#nav2{
     margin-right: 15px;
 }
 #projectList,#blogList{
     display: flex;
+
     margin: 1rem;
 }
-/* section{
-    margin: 1rem 0;
-} */
+#footerList{
+    display: flex;
+    background: #1f2124;
+    padding:15px 0px;
+    justify-content: flex-end;
+}
+#footerList li{
+    margin-right: 15px;
+}
 #projectList li,#blogList li{
-    border:2px solid red;
+    border:2px solid #00c905;
     height: 100px;
     width:180px;
     margin-right: 10%;
@@ -90,7 +109,7 @@ section ul{
     bottom: 0;
     left: 5px;
 }
-.App{
+.appp{
     /* wrapper */
     margin-left: 10%;
     width: 80%;
