@@ -78,7 +78,7 @@ body{
 }
 section ul{
     padding-bottom: 1rem;
-    border-bottom: 2px solid #00c905;
+    border-bottom: 3px solid #00c905;
 }
 #nav1,#nav2{
     margin-right: 15px;
@@ -88,9 +88,12 @@ section ul{
 
     margin: 1rem;
 }
+#footer{
+    background: #1f2124;
+}
 #footerList{
     display: flex;
-    background: #1f2124;
+   
     padding:15px 0px;
     justify-content: flex-end;
 }
@@ -98,7 +101,7 @@ section ul{
     margin-right: 15px;
 }
 #projectList li,#blogList li{
-    border:2px solid #00c905;
+    border:3px solid #00c905;
     height: 100px;
     width:180px;
     margin-right: 10%;
@@ -107,10 +110,55 @@ section ul{
 #projectList li p,#blogList li p {
     position: absolute;
     bottom: 0;
-    left: 5px;
+    left: 0px;
 }
 .appp{
     /* wrapper */
     margin-left: 10%;
     width: 80%;
+}
+#aboutPic{
+    width: 30%;
+}
+#blogSection{
+    margin-bottom: 2rem;
+}
+#about{
+    /* display: inline-block; */
+    border: 1px solid red;
+    text-align: center;
+}
+#skillsList{
+    display: flex;
+    justify-content: space-evenly;
+}
+#skillsSection{
+    margin-bottom: 2rem;
+}
+#livefm{
+    background-image: url('./img/liveFmAPI.png');
+    background-size:cover;
+}
+#twitClone{
+    background-image: url('./img/twitterClone.png');
+    background-size:cover;
+}
+#footerList{
+    margin-right: 43%;
+}
+#quizApp{
+    background-image: url('./img/quizMaker.png');
+    background-size:cover;
+}
+#task{
+    background-image: url('./img/taskman.png');
+    background-size:cover;
+}
+#projectList li p{
+    color:white;
+    padding-top: 5px;
+    /* border:1px solid blue; */
+    width: 100%;
+    background-color: black;
+    
 }
