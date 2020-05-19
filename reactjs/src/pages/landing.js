@@ -5,21 +5,27 @@ class Landing extends Component {
     render() {
         return (
             <Fragment>
-                <h1>Landing page</h1>
-                <h2>Projects</h2>
-                <ul id='projectList'>
-                    <li>Quiz App</li>
-                    <li>LiveFm API</li>
-                    <li>Task Manager</li>
-                    <li>Twitter Clone</li>
-                </ul>
-                <h2>Blog Articles</h2>
-                <ul id='blogList'>
-                    <li>Version Control</li>
-                    <li>Temp</li>
-                    <li>Temp</li>
-                    <li>Temp</li>
-                </ul>
+                <section id='attention'>
+                    <h1>Dominik Coll</h1>
+                </section>
+                <section id='projectSection'>
+                    <h2>Projects</h2>
+                    <ul id='projectList'>
+                        <li><p>Quiz App</p></li>
+                        <li><p>LiveFm API</p></li>
+                        <li><p>Task Manager</p></li>
+                        <li><p>Twitter Clone</p></li>
+                    </ul>
+                </section>
+                <section id='blogSection'>
+                    <h2>Blog Articles</h2>
+                    <ul id='blogList'>
+                        <li><p>Version Control</p></li>
+                        <li><p>Temp</p></li>
+                        <li><p>Temp</p></li>
+                        <li><p>Temp</p></li>
+                    </ul>
+                </section>
             </Fragment>
 
         );

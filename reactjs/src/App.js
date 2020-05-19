@@ -9,7 +9,6 @@ function App() {
       <div className="App">
 
         <Nav />
-        <h1>welcome</h1>
         <Routes />
       </div>
     </Router>
