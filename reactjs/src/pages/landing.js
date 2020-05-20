@@ -1,13 +1,25 @@
 import React, { Component, Fragment } from 'react';
 import '../styles.css'
 import i from '../img/aboutPic.png'
-import livefmPic from '../img/liveFmAPI.png'
+import JsPic from '../img/js.png'
+import htmlPic from '../img/html.png'
+import reactPic from '../img/react.png'
+import uiPic from '../img/ui.png'
+import webPic from '../img/web.png'
+import cssPic from '../img/css.png'
+import Particles from 'react-particles-js';
+
+// import '../particles/app'
+
 class Landing extends Component {
     state = {}
     render() {
         return (
             <Fragment>
                 <section id='attention'>
+
+                    <Particles height='300px' />
+
                     <h1>Dominik Coll</h1>
                 </section>
                 <section id='projectSection'>
@@ -31,12 +43,12 @@ class Landing extends Component {
                 <section id='skillsSection'>
                     <p>Skills Include</p>
                     <ul id='skillsList'>
-                        <li><h2>Javascript</h2></li>
-                        <li><h2>ReactJs</h2></li>
-                        <li><h2>HTML</h2></li>
-                        <li><h2>CSS/SASS</h2></li>
-                        <li><h2>Web Applications</h2></li>
-                        <li><h2>UI/UX</h2></li>
+                        <li><img class='skillIcons' src={JsPic} alt='Javascript' /><h2>Javascript</h2></li>
+                        <li><img class='skillIcons' src={reactPic} alt='ReactJs' /><h2>ReactJs</h2></li>
+                        <li><img class='skillIcons' src={htmlPic} alt='HTML' /><h2>HTML</h2></li>
+                        <li><img class='skillIcons' src={cssPic} alt='CSS' /><h2>CSS/SASS</h2></li>
+                        <li><img class='skillIcons' src={webPic} alt='Web Applications' /><h2>Web Applications</h2></li>
+                        <li><img class='skillIcons' src={uiPic} alt='UI' /><h2>UX</h2></li>
                     </ul>
                 </section>
                 <section id='about'>
