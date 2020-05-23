@@ -1,4 +1,5 @@
 /* css reset not mine */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -43,6 +44,7 @@ table {
 	border-spacing: 0;
 }
 /* my css below */
+
 #navList{
     color:orange;
     margin-right: 10%;
@@ -55,18 +57,22 @@ a,a:visited{
     background-color: #1f2124
 }
 body{
-    background-color: #050d14;
+    background-color: #11171b;
     color:white;
+    font-family: 'Nunito', sans-serif;
 }
 #navList{
-    border:1px solid red;
+    /* border:1px solid red; */
     display: flex;
     padding: 15px 0;
     justify-content: flex-end;
-    
+}
+
+a{
+    border: none; text-decoration: none;
 }
 #attention{
-    border:1px solid purple;
+    /* border:1px solid purple; */
     height: 300px;
     margin-bottom: 1rem;
     position: relative;
@@ -76,6 +82,8 @@ body{
     position: absolute;
     bottom: 0;
     left: 17px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
 }
 section ul{
     padding-bottom: 1rem;
@@ -103,20 +111,23 @@ section ul{
 }
 #projectList li,#blogList li{
     border:3px solid #00c905;
-    height: 100px;
-    width:180px;
-    margin-right: 10%;
+    height: 160px;
+    width:60%;
+    margin-right: 3%;
     position: relative;
+   
 }
 #projectList li p,#blogList li p {
     position: absolute;
     bottom: 0;
     left: 0px;
+text-indent: 5px;
 }
+
 .appp{
     /* wrapper */
-    margin-left: 10%;
-    width: 80%;
+    margin-left: 5%;
+    width: 90%;
 }
 #aboutPic{
     width: 30%;
@@ -124,14 +135,16 @@ section ul{
 #blogSection{
     margin-bottom: 2rem;
 }
+
 #about{
     /* display: inline-block; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
 }
 #skillsList{
     display: flex;
     justify-content: space-evenly;
+
 }
 #skillsSection{
     margin-bottom: 2rem;
@@ -139,10 +152,12 @@ section ul{
 #livefm{
     background-image: url('./img/liveFmAPI.png');
     background-size:cover;
+    background-position: center;
 }
 #twitClone{
     background-image: url('./img/twitterClone.png');
     background-size:cover;
+    background-position: center;
 }
 #footerList{
     margin-right: 43%;
@@ -150,12 +165,33 @@ section ul{
 #quizApp{
     background-image: url('./img/quizMaker.png');
     background-size:cover;
+    background-position: center;
 }
 #task{
     background-image: url('./img/taskman.png');
     background-size:cover;
 }
-#projectList li p{
+#vc{
+    background-image: url('./img/versionControll.png');
+    background-size:cover;
+    background-position: center;
+}
+#mvc{
+    background-image: url('./img/mvc.png');
+    background-size:cover;
+    background-position: center;
+}
+#reactjs{
+    background-image: url('./img/reactjs.png');
+    background-size:cover;
+    background-position: center;
+}
+#particles{
+    background-image: url('./img/particles.png');
+    background-size:cover;
+    background-position: center;
+}
+#projectList li p,#blogList li p{
     color:white;
     padding-top: 5px;
     /* border:1px solid blue; */

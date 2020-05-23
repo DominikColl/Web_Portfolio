@@ -18,26 +18,57 @@ class Landing extends Component {
             <Fragment>
                 <section id='attention'>
 
-                    <Particles height='300px' />
+                    <Particles
+                        params={{
+                            "particles": {
+                                "number": {
+                                    "value": 230,
+                                    "density": {
+                                        "enable": false
+                                    }
+                                },
+                                "color": {
+                                    "value": "#00c905"
+                                },
+                                "size": {
+                                    "value": 3,
+                                    "random": true,
+                                    "anim": {
+                                        "speed": 4,
+                                        "size_min": 0.3
+                                    }
+                                },
+                                "line_linked": {
+                                    "enable": false
+                                },
+                                "move": {
+                                    "random": true,
+                                    "speed": 1,
+                                    "direction": "top",
+                                    "out_mode": "out"
+                                }
+                            },
+
+                        }} height='300px' />
 
                     <h1>Dominik Coll</h1>
                 </section>
                 <section id='projectSection'>
                     <h2>Projects</h2>
                     <ul id='projectList'>
-                        <li id='quizApp'><div><p>Quiz App</p></div></li>
+                        <li id='quizApp'><p>Quiz App</p></li>
                         <li id='livefm'><p>LiveFm API</p></li>
                         <li id='task'><p>Task Manager</p></li>
                         <li id='twitClone'><p>Twitter Clone</p></li>
                     </ul>
                 </section>
                 <section id='blogSection'>
-                    <h2>Blog Articles</h2>
+                    <h2>Tutorials</h2>
                     <ul id='blogList'>
-                        <li><p>Version Control</p></li>
-                        <li><p>Temp</p></li>
-                        <li><p>Temp</p></li>
-                        <li><p>Temp</p></li>
+                        <li id='vc'><p>Version Control</p></li>
+                        <li id='mvc'><p>MVC</p></li>
+                        <li id='reactjs'><p>ReactJs Intro</p></li>
+                        <li id='particles'><p>React Particles</p></li>
                     </ul>
                 </section>
                 <section id='skillsSection'>

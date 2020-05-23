@@ -1,0 +1,26 @@
+{
+  "name": "Web_Portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api": "cd api; nodemon server.js",
+    "web": "cd reactjs; npm run start",
+    "dev": "concurrently --raw \"npm run api\" \"npm run web\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DominikColl/Web_Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DominikColl/Web_Portfolio/issues"
+  },
+  "homepage": "https://github.com/DominikColl/Web_Portfolio#readme",
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
