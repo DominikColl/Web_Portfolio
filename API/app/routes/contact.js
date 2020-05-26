@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const contactController = require('../controllers/controller')
+const contactController = require('../controllers/contact')
 
 
 router.post('/contact', contactController.submitContact)
