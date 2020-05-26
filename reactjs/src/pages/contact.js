@@ -2,7 +2,20 @@ import React, { Component } from 'react';
 import API from '../API'
 import '../styles.css'
 class Landing extends Component {
-    state = { name: 't', email: 't', reason: 't' }
+    state = { name: '', email: '', reason: '' }
+    handleInputChange = event => {
+        // get the input from the event
+        const { target } = event;
+        // find the value of the input
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        // get the name of the input from it's attribute
+        const { name } = target;
+        // set state to the name and the value. For example, { description: 'hi'}
+        this.setState({
+            [name]: value
+        });
+
+    };
     createContact = async (event) => {
         // const history = useHistory();
         event.preventDefault();
@@ -16,9 +29,9 @@ class Landing extends Component {
             <>
                 <h1>Form</h1>
                 <form>
-                    <input type='text' placeholder='Name'></input>
-                    <input type='text' placeholder='Email'></input>
-                    <textarea type='text' placeholder=''></textarea>
+                    <input type='text' name="name" id="name" onChange={this.handleInputChange} placeholder='Name'></input>
+                    <input type='text' name="email" id="email" onChange={this.handleInputChange} placeholder='Email'></input>
+                    <textarea type='text' name="reason" id="reason" onChange={this.handleInputChange} placeholder=''></textarea>
                     <button onClick={this.createContact}>Submit</button>
                 </form>
             </>
