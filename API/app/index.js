@@ -16,10 +16,7 @@ app.use(function (req, res, next) {
     next();
 });
 app.use('/submit', contactRouter)
-// app.use((err, req, res, next) => {
-//     error('ERROR FOUND:', err);
-//     res.sendStatus(500);
-// });
+
 
 // export the express app
 module.exports = app;
