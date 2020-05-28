@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "api": "cd api; nodemon server.js",
     "web": "cd reactjs; npm run start",
-    "dev": "concurrently --raw \"npm run api\" \"npm run web\""
+    "dev": "concurrently --raw \"npm run api\" \"npm run web\"",
+    "build": "cd reactjs; npm run build"
   },
   "repository": {
     "type": "git",
